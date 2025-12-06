@@ -44,7 +44,7 @@
 
 <section class="section">
   <h2>Contact &amp; Quotes</h2>
-  <p class="lead">Share a few details about your property and how often you’d like service. We’ll respond with a clear, written quote.</p>
+  <p class="lead">Send us the details below and we’ll reply with a clear, written quote.</p>
 
   <div class="columns-2">
     <div>
@@ -53,40 +53,33 @@
         <strong>Phone:</strong> 502-702-0733<br/>
         <strong>Address:</strong> 4157 Bridgemont Lane, Lexington, KY 40515
       </p>
-      <p class="muted">You can call or text during normal hours for questions, or use the form to get a seasonal or per-storm quote.</p>
+      <p class="muted">Call or text anytime during normal hours. For quotes, email is the fastest way.</p>
     </div>
 
     <div class="card">
-      <h3>Quote request form</h3>
+      <h3>Request a Quote</h3>
 
-      <!-- FORM WIRED TO EMAIL -->
-      <form action="https://formsubmit.co/bluepeaksnow@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New Quote Request - BluePeak Website">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
+      <p class="muted">To get a quote, email us with the details below.</p>
 
-        <input type="text" name="name" placeholder="Full name" required />
-        <input type="text" name="phone" placeholder="Phone number" required />
-        <input type="email" name="email" placeholder="Email (optional)" />
-        <input type="text" name="address" placeholder="Service address" required />
+      <p><strong>Please include:</strong></p>
+      <ul class="clean">
+        <li>Your full name</li>
+        <li>Phone number</li>
+        <li>Service address</li>
+        <li>Property type (home, duplex, storefront, office lot, etc.)</li>
+        <li>Areas needing service (driveway, walkways, steps, parking lot)</li>
+        <li>Whether you want salting/de-icing</li>
+        <li>Photos (optional but helpful)</li>
+      </ul>
 
-        <select name="property_type" required>
-          <option value="">Property type</option>
-          <option>Single-family home</option>
-          <option>Duplex / small multi-unit</option>
-          <option>Apartment building</option>
-          <option>Retail / storefront</option>
-          <option>Office / commercial lot</option>
-        </select>
+      <!-- EMAIL BUTTON -->
+      <a 
+        class="btn-primary" 
+        href="mailto:bluepeaksnow@gmail.com?subject=Snow Removal Quote Request&body=Hi,%0D%0A%0D%0AI’d like a quote for snow removal.%0D%0AHere are my details:%0D%0A%0D%0AFull Name:%0D%0APhone Number:%0D%0AService Address:%0D%0AProperty Type:%0D%0AAreas to Clear:%0D%0ASalting Needed: Yes/No%0D%0AAdditional Details:%0D%0A%0D%0AThanks!">
+        Send Email Request
+      </a>
 
-        <textarea name="details" placeholder="Tell us about your driveway, walkways, parking areas, and what you’re looking for." required></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-
-      <p class="muted" style="margin-top:8px;">
-        This form sends directly to <strong>bluepeaksnow@gmail.com</strong>. We’ll get back to you shortly.
-      </p>
+      <p class="muted" style="margin-top:10px;">This opens your email app with everything pre-filled.</p>
     </div>
   </div>
 </section>
