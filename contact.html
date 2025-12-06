@@ -5,19 +5,18 @@
   <title>Contact - BluePeak Snow &amp; Ice</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+
   <meta name="description" content="Fast, reliable snow removal in Lexington, KY. BluePeak Snow & Ice provides driveway clearing, sidewalk shoveling, salting, de-icing, and commercial snow management. Call 502-702-0733 for 24/7 winter service.">
-
   <meta name="keywords" content="snow removal Lexington KY, snow plowing near me, driveway snow clearing, sidewalk snow removal, commercial snow removal Lexington, de-icing service Lexington, salting service, emergency snow removal Lexington, snow removal Kentucky">
-
   <meta name="author" content="BluePeak Snow & Ice">
 
   <meta property="og:title" content="BluePeak Snow & Ice | Snow Removal in Lexington, KY">
-  <meta property="og:description" content="Fast and dependable snow plowing, salting, and ice management for homes and businesses in Lexington. Call 502-702-0733 for service.">
+  <meta property="og:description" content="Fast and dependable snow plowing, salting, and ice management for homes and businesses in Lexington. Call 502-234-1303 for service.">
   <meta property="og:image" content="https://bluepeaksnow.com/images/storefront.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bluepeaksnow.com">
-
 </head>
+
 <body>
 
 <header>
@@ -46,21 +45,32 @@
 <section class="section">
   <h2>Contact &amp; Quotes</h2>
   <p class="lead">Share a few details about your property and how often you’d like service. We’ll respond with a clear, written quote.</p>
+
   <div class="columns-2">
     <div>
       <h3>Contact details</h3>
-      <p><strong>Phone:</strong> 502-702-0733<br/>
-         <strong>Address:</strong> 4157 Bridgemont Lane, Lexington, KY 40515</p>
+      <p>
+        <strong>Phone:</strong> 502-702-0733<br/>
+        <strong>Address:</strong> 4157 Bridgemont Lane, Lexington, KY 40515
+      </p>
       <p class="muted">You can call or text during normal hours for questions, or use the form to get a seasonal or per-storm quote.</p>
     </div>
+
     <div class="card">
       <h3>Quote request form</h3>
-      <form action="#" method="post">
+
+      <!-- FORM WIRED TO EMAIL -->
+      <form action="https://formsubmit.co/bluepeaksnow@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Quote Request - BluePeak Website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
         <input type="text" name="name" placeholder="Full name" required />
         <input type="text" name="phone" placeholder="Phone number" required />
         <input type="email" name="email" placeholder="Email (optional)" />
         <input type="text" name="address" placeholder="Service address" required />
-        <select name="property_type">
+
+        <select name="property_type" required>
           <option value="">Property type</option>
           <option>Single-family home</option>
           <option>Duplex / small multi-unit</option>
@@ -68,10 +78,15 @@
           <option>Retail / storefront</option>
           <option>Office / commercial lot</option>
         </select>
-        <textarea name="details" placeholder="Tell us about your driveway, walkways, parking areas, and what you’re looking for."></textarea>
-        <button type="submit">Submit (sample form)</button>
+
+        <textarea name="details" placeholder="Tell us about your driveway, walkways, parking areas, and what you’re looking for." required></textarea>
+
+        <button type="submit">Submit</button>
       </form>
-      <p class="muted" style="margin-top:8px;">This sample form doesn’t send yet. When you’re ready, it can be wired to email, Formspree, or another service.</p>
+
+      <p class="muted" style="margin-top:8px;">
+        This form sends directly to <strong>bluepeaksnow@gmail.com</strong>. We’ll get back to you shortly.
+      </p>
     </div>
   </div>
 </section>
